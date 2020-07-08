@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    min-width: 10px;
+    max-width: 100vw;
+    
+}
+html,body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    position: relative;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.canvas{
+    box-sizing: border-box;
+    max-width: 500px;
+    min-width: 100px;
+    width: min-content;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    transition: 0.1s;
+    position: relative;
+}
+#win{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.table{
+    display: flex;
+}
+.div-containers{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border:1px solid black;
+    height: min-content;
+}
+.btn-containers{
+    display: inline-flex;
+    margin: 0;
+}
+.btn-containers button{
+    width:  50px;
+    height: 50px;
+    background-color: white;
+    border: 1px inset gray;
+    transition: 0.3s;
+}
+@media only screen and (max-width:600px){
+    .btn-containers button{
+        width:  40px;
+        height: 40px;
+    }
+}
+@media only screen and (max-width:450px){
+    .btn-containers button{
+        width:  35px;
+        height: 35px;
+    }
+}
+@media only screen and (max-width:350px){
+    .btn-containers button{
+        width:  30px;
+        height: 30px;
+    }
+}
+@media only screen and (max-width:300px){
+    .btn-containers button{
+        width:  25px;
+        height: 25px;
+    }
+}
+.values{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding:2em;
+}
+.values button{
+    border: 1px solid gray;
+    background-color: rgb(177, 175, 175);
+    border-radius: 50%;
+    margin: 1px;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+.values button:focus{
+    outline: none;
+}
+#reset{
+    background-color: red;
+    color: white;
+}
